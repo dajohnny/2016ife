@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+	<head>
+		<title>baidu ife stage one-task4</title>
+		<meta charset="UTF-8" />
+		<title>任务四：定位和居中问题</title>
+		<style type="text/css">
+			body{
+				background: #333;
+			}
+			article{
+				position: absolute;
+				top:50%;
+				left: 50%;
+				/*第一种写法
+				margin-left: -200px;
+				margin-top: -100px;*/
+				transform: translate(-50%,-50%); 
+			}
+			.box{
+				display: block;
+				width: 400px;
+				height: 200px;
+				background: #ccc;
+				overflow: hidden;
+			}
+			.ox{
+				width: 100px;
+				height: 100px;
+				position: absolute;
+				border-radius: 50%;
+				background: #fc0;
+			}
+			.tl{
+				top:-50px;
+				left:-50px;
+			}
+			.br{
+				bottom:-50px;
+				right:-50px;
+			}
+		</style>
+	</head>
+	<body>
+		<article class="box">
+			<div class="ox tl"></div>
+			<div class="ox br"></div>
+		</article>
+	</body>
+</html>

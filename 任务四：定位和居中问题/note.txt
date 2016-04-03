@@ -1,0 +1,7 @@
+
+遇到的问题如下：
+
+1、如何让一个div元素 垂直居中于页面
+总结：在该元素上加position:absolute，设置left和top值即可，注意设置margin值
+
+第二种写法，transform: translate(-50%,-50%); 本元素设定position:absolute,可设置百分百垂直和水平居中

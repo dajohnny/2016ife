@@ -1,0 +1,90 @@
+html, body, div {
+    margin: 0;
+    padding: 0;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    display: block;
+    border:1px solid #999;
+}
+
+article{
+	position: relative;
+	min-width: calc(200px + 200px + 120px + 80px);
+	background: #eee;
+	border: 1px solid #999;
+	margin:20px;
+}
+
+article .group{
+	position: relative;
+	left:20px;
+	top:20px;
+	width: 220px;
+	float: left;
+	padding: 20px;
+	background: #fff;
+	border: 1px solid #999;
+	overflow: hidden;
+}
+
+.group img{
+	width: 80px;
+	height: 80px;
+	float: left;
+}
+
+.group h1{
+	display: inline-block;
+	float: left;
+	font-size: 16px;
+	padding-left: 20px;
+}
+
+.content{
+	overflow: hidden;
+	margin-top: 20px;
+	border: 1px solid #999;
+	padding:20px;
+	background: #fff;
+	display: block;
+	margin:20px 160px 20px 260px;
+	/*margin: 20px 140px 20px 220px;*/
+}
+.content h2{
+	margin-top: 0px;
+}
+.content p{
+	line-height: 12px;
+	font-size: 10px;
+	display: block;
+	margin: 4px 0px;
+}
+
+.personal{
+	width: 120px;
+	padding:20px;
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	background: #fff;
+	float: right;
+	border: 1px solid #999;
+}
+
+.personal img{
+	margin-top: 20px;
+	width: 80px;
+	height: 80px;
+}
+.personal img.fristimg{
+	margin-top: 0;
+}
+
+
+
+
+
+

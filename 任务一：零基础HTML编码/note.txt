@@ -1,0 +1,10 @@
+认识的新标签如下：
+header头部 nav导航 article内容 footer尾部 aside侧边栏 
+table表格里面 分有thead头部 tbody身体 tfoot尾部标签
+
+新认识属性：
+1.placeholder为input 的输入框默认值
+2.maxlength="16" min="6" 是设置input框长度为6-16的数值
+3.cols 和rows 分别为列和行的意思
+4.table border="1px" cellspacing="0px" 可设置边框之间无边距
+5.ol为有序列表，默认是阿拉伯数字

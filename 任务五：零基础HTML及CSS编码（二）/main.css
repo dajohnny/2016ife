@@ -1,0 +1,343 @@
+html,body,header,h1,h2,h3,h4,p,span,ul,li,a{
+	padding:0px;
+	margin:0px;
+}
+html{
+	font-family:"黑体";
+	background: #fff;
+}
+
+ul li{
+	list-style: none;
+}
+ol{
+	font-family:"calibri";
+}
+body{
+	margin:0 auto;
+	background:#fff;
+}
+header{
+	height: 60px;
+	background-color: #333;
+}
+header .warp{
+	background: #333333;
+}
+header h1{
+	height: 100%;
+	display: block;
+	float: left;
+}
+header h1 img{
+	display: block;
+	height:60px;
+}
+header nav{
+	float: right;
+}
+header nav li{
+	float:left;
+}
+header nav li a{
+	text-align: center;
+	line-height: 60px;
+	height: 60px;
+	padding-right: 16px;
+	text-decoration: none;
+	color:#fff;
+}
+.warp{
+	overflow: hidden;
+	width: 1280px;
+	margin:0px auto;
+	margin-bottom: 20px;
+	background: #DEDEDE;
+}
+article,aside{
+	border:1px solid #cbcbcb;
+	background:#fff;
+	margin: 20px;
+	padding: 25px;
+	overflow: hidden;
+    box-shadow: 4px 2px 4px #848484;
+}
+
+article{
+	width: 805px;
+}
+article h2{
+	color:#000302;
+	margin-top: 10px;
+	height: 40px;
+	line-height: 40px;
+}
+article h3{
+	color:#636363;
+	height: 40px;
+	font-size:18px;
+	line-height: 40px;
+}
+article .info{
+	text-indent: 0;
+	margin-top: 0;
+}
+article .info span{
+	font-size:13px;
+	color:#636363;
+	line-height: 22px;
+	height: 22px;
+}
+article p{
+	margin-top: 10px;
+	line-height: 26px;
+	font-size: 16px;
+	color:#333;
+	text-indent: 2em;
+}
+article .pic{
+	margin-top: 30px;
+}
+article .pic li{
+	margin-bottom: 15px;
+	padding:10px;
+	float: left;
+	text-align: center;
+	width: 122px;
+	border:1px solid #cecece;
+	margin-right: 20px;
+}
+article .pic li.crm{
+	margin-right: 0px;
+}
+article .pic li p{
+	text-align: center;
+	text-indent: 0;
+	float: left;
+}
+article .pic li img{
+	width: 100px;
+	border:0px;
+
+	display: inline-block;
+}
+table{
+	width: 100%;
+	border:1px solid #ccc;
+	border-collapse: collapse;
+}
+table tr{
+	height: 24px;
+	line-height:24px;
+}
+table td,table th{
+	border:1px solid #ccc;
+	font-size:14px;
+	padding-left:10px;
+	border-collapse: collapse;
+}
+table thead{
+	color:#fff;
+	background:#333333;
+}
+table tfoot{
+	background:#ccc;
+}
+table .total{
+	 font-weight: 900;
+}
+aside{
+	width: 315px;
+	padding:20px 25px 20px 20px;
+	float:right;
+}
+aside h3{
+	height: 38px;
+	line-height: 38px;
+	border-left:3px solid #ccc;
+	padding-left: 10px;
+	font-size: 17px;
+}
+aside form{
+	width: 100%;
+}
+aside form ul{
+	margin-top:20px;
+}
+aside form .tit{
+	font-size: 14px;
+	display: inline-block;
+	text-align: right;
+	width: 100px;
+}
+aside form li{
+	margin-top:10px;
+}
+aside form p{
+	font-size:13px;
+	margin-top:6px;
+	margin-left: 115px;
+	color:#ccc;
+}
+aside form .sex label{
+	width:15px;
+	height: 14px;
+	padding-left: 20px;
+	cursor: pointer;
+	background:url(checkbox.jpg) no-repeat left top;
+}
+aside form .sex label.checked{
+	width:15px;
+	height: 14px;
+	padding-left: 20px;
+	cursor: pointer;
+	background:url(checked.jpg) no-repeat left top;
+}
+aside form .sex label{
+	width:15px;
+	height: 14px;
+	padding-left: 20px;
+	cursor: pointer;
+	background:url(checkbox.jpg) no-repeat left top;
+}
+aside form .sex input[type="radio"] {
+  display: none;
+}
+
+input[type=radio] {
+  position: relative;
+  width: 10px;
+  height: 0px;
+}
+input[type=radio]::before,
+input[type=radio]::after {
+  position: absolute;
+  display: block;
+  content: '';
+  border-radius: 50%;
+  transition: .3s all esae;
+}
+input[type=radio]::before {
+  top: -12px;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  border: 3px solid #ccc;
+}
+input[type=radio]::after {
+    top: -7.5px;
+    left: 5px;
+    width: 6px;
+    height: 6px;
+	background-color: #fff;
+}
+input[type=radio]:checked::before {
+  border-color: #2E9DFF;
+}
+input[type=radio]:checked::after {
+  background-color: #2E9DFF;
+}
+
+
+
+
+
+input[type=checkbox] {
+  position: relative;
+  width: 10px;
+  height: 0px;
+}
+input[type=checkbox]::before,
+input[type=checkbox]::after {
+  position: absolute;
+  display: block;
+  content: '';
+  transition: .3s all esae;
+}
+
+input[type=checkbox]::before {
+  top: -12px;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  border: 1px solid #ccc;
+}
+input[type=checkbox]::after {
+    top: -9px;
+    left: 3px;
+    width: 6px;
+    height: 6px;
+	background-color: #fff;
+}
+input[type=checkbox]:checked::before {
+  border-color: #2E9DFF;
+}
+input[type=checkbox]:checked::after {
+  background-color: #2E9DFF;
+}
+
+
+
+
+
+
+
+
+
+
+
+.city label{
+	position:relative;
+}
+.city select{
+    border: 1px solid #ccc;
+    padding: 0px 10px;
+    outline: none;
+    border-radius: 2px;
+    display: inline-block;
+    height: 18px;
+}
+.city .box{
+    width: 15px;
+    display: inline-block;
+    height: 18px;
+    background: red;
+    position: absolute;
+	background:url(option.jpg);
+    top: 0px;
+    right: 0px;
+}
+aside form textarea{
+	width:200px;
+	height:98px;
+	font-size:16px;
+	vertical-align: top;
+}
+aside form button{
+	width:100%;
+	height: 40px;
+	line-height: 40px;
+	color:#fff;
+	font-size:16px;
+	text-align: center;
+	background:#3355d0;
+	margin:0 auto;
+	border:0 none;
+	border-radius: 6px;
+	margin-top: 16px;
+}
+footer{
+	background:#000;
+	height: 40px;
+	width: 100%;
+	clear: both;
+	padding-top: 30px;
+}
+footer p{
+	text-align: center;
+	font-size:16px;
+	color:#fff;
+}
+footer a{
+	text-decoration: none;
+}

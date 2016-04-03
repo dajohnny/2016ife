@@ -1,0 +1,14 @@
+
+属性总结：
+1、border-collapse: collapse; 可以将table变成1px; cellspacing="0px"是无效的喔。
+2、aside form .sex input[type="radio"]  这也是一种选择器的写法喔
+
+关于单选按钮如何更改问题总结如下：
+首先单选按钮是默认样式，先把他display:none; 选中input[type="radio"] 设置它，然后input 要跟lable分开布局，lable内写sex。让input hide后，将lable 的左边距设置20px;然后插入照片注意是no-repeat left center;然后设置一下width和height 即可。
+
+关于下拉菜单按钮如何更改问题总结如下：
+在lable 内select外加span给他一个position:absolute;，使用遮挡select的默认样式，注意在父元素lable设置一下position:relative。 
+
+难点一：
+如何随着照片的大小自由扩大？
+该li设置了固定height，没有办法随着插入的images 变大而增大。如果要实现的话，要在li里面在定义一个元素包裹住imgages和p,给他设置display:inner-block;而li则设置width:100%;这样可能会标签显得有些累赘。

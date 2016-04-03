@@ -1,0 +1,20 @@
+
+遇到的问题如下：
+
+1、当给article 设定position：relative，给content设定position：absolute；然后然后给他margin让自适应浏览器宽度，可是高度不能自适应？
+总结：左右给absolute,content不需要给他设定width数值和absolute，只要margin 就可实现自适应。
+
+
+2、在极端情况下测试，content不能自适应宽度，最大的宽度为文本的宽度
+总结：和上一样
+
+
+
+新知识库：
+
+设置最低的大小
+min-width: calc(200px + 200px + 120px + 80px);
+
+课后总结：
+用float设置左右，中间用margin,实现左中右流体布局，代码间顺序是左右中。
+用position设置左右,中间用margin,实现左中右流体布局，代码间顺序是左右中。

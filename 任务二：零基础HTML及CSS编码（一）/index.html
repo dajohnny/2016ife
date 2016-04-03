@@ -1,0 +1,455 @@
+<!doctype html>
+<html>
+	<head>
+		<title>baidu ife stage1-task2 零基础HTML及css编码</title>
+		<meta charset="UTF-8" />
+		<style type="text/css">
+			html,body,header,h1,h2,h3,h4,p,span,ul,li,a{
+				padding:0px;
+				margin:0px;
+			}
+			html{
+				font-family:"黑体";
+				background: #fff;
+			}
+			ul li{
+				list-style: none;
+			}
+			ol{
+				font-family:"calibri";
+			}
+			body{
+				width:100%;
+				margin:0 auto;
+				background:#dedede;
+			}
+			header{
+				height: 60px;
+				background-color: #333;
+			}
+			header h1{
+				height: 100%;
+				display: block;
+				float: left;
+			}
+			header h1 img{
+				display: block;
+				height:60px;
+			}
+			header nav{
+				float: right;
+			}
+			header nav li{
+				float:left;
+			}
+			header nav li a{
+				text-align: center;
+				line-height: 60px;
+				height: 60px;
+				padding-right: 16px;
+				text-decoration: none;
+				color:#fff;
+			}
+			article,aside{
+				border:1px solid #cbcbcb;
+				background:#fff;
+				margin: 20px;
+				padding: 25px;
+				overflow: hidden;
+			}
+			article h2{
+				color:#000302;
+				margin-top: 10px;
+				height: 40px;
+				line-height: 40px;
+			}
+			article h3{
+				color:#636363;
+				height: 40px;
+				font-size:18px;
+				line-height: 40px;
+			}
+			article .info{
+				text-indent: 0;
+				margin-top: 0;
+			}
+			article .info span{
+				font-size:13px;
+				color:#636363;
+				line-height: 22px;
+				height: 22px;
+			}
+			article p{
+				margin-top: 10px;
+				line-height: 26px;
+				font-size: 16px;
+				color:#333;
+				text-indent: 2em;
+			}
+			article .pic{
+				margin-left:30px; 
+				margin-top: 30px;
+			}
+			article .pic li{
+				margin-bottom: 15px;
+				padding:10px;
+				text-align: center;
+				width: 120px;
+				clear: left;
+				border:1px solid #cecece;
+			}
+			article .pic li p{
+				text-align: center;
+				text-indent: 0;
+			}
+			article .pic li img{
+				width: 100px;
+				border:0px;
+				display: inline-block;
+			}
+			table{
+				width: 100%;
+				border:1px solid #ccc;
+				border-collapse: collapse;
+			}
+			table tr{
+				height: 24px;
+				line-height:24px;
+			}
+			table td,table th{
+				border:1px solid #ccc;
+				font-size:14px;
+				padding-left:10px;
+				border-collapse: collapse;
+			}
+			table thead{
+				color:#fff;
+				background:#333333;
+			}
+			table tfoot{
+				background:#ccc;
+			}
+			table .total{
+				 font-weight: 900;
+			}
+			aside h3{
+				height: 38px;
+				line-height: 38px;
+				border-left:3px solid #ccc;
+				padding-left: 10px;
+			}
+			aside form{
+				width: 100%;
+			}
+			aside form ul{
+				margin-left:30%;
+				margin-top:20px;
+			}
+			aside form .tit{
+				width:106px;
+				font-size: 14px;
+				display: inline-block;
+				text-align: right;
+			}
+			aside form li{
+				margin-top:10px;
+			}
+			aside form p{
+				font-size:13px;
+				margin-top:6px;
+				margin-left: 115px;
+				color:#ccc;
+			}
+			aside form .sex label{
+				width:15px;
+				height: 14px;
+				padding-left: 20px;
+				cursor: pointer;
+				background:url(checkbox.jpg) no-repeat left top;
+			}
+			aside form .sex label.checked{
+				width:15px;
+				height: 14px;
+				padding-left: 20px;
+				cursor: pointer;
+				background:url(checked.jpg) no-repeat left top;
+			}
+			aside form .sex label{
+				width:15px;
+				height: 14px;
+				padding-left: 20px;
+				cursor: pointer;
+				background:url(checkbox.jpg) no-repeat left top;
+			}
+			aside form .sex input[type="radio"] {
+			  display: none;
+			}
+			.city label{
+				position:relative;
+			}
+			.city select{
+			    border: 1px solid #ccc;
+			    padding: 0px 10px;
+			    outline: none;
+			    border-radius: 2px;
+			    display: inline-block;
+			    height: 18px;
+			}
+			.city .box{
+			    width: 15px;
+			    display: inline-block;
+			    height: 18px;
+			    background: red;
+			    position: absolute;
+				background:url(option.jpg);
+			    top: 0px;
+			    right: 0px;
+			}
+			aside form textarea{
+				width:70%;
+				height:98px;
+				font-size:16px;
+				vertical-align: top;
+			}
+			aside form button{
+				width:100%;
+				height: 40px;
+				line-height: 40px;
+				color:#fff;
+				font-size:16px;
+				text-align: center;
+				background:#3355d0;
+				margin:0 auto;
+				border:0 none;
+				border-radius: 6px;
+				margin-top: 16px;
+			}
+			footer{
+				background:#000;
+				height: 40px;
+				width: 100%;
+				padding-top: 30px;
+			}
+			footer p{
+				text-align: center;
+				font-size:16px;
+				color:#fff;
+			}
+			footer a{
+				text-decoration: none;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- header strat -->
+		<header>
+			<h1>
+				<img src="baidulogo_white.png" />
+			</h1>
+			<nav>
+				<ul>
+					<li><a title="导航链接一" href="javascript:void(0)">导航链接一</a></li>
+					<li><a title="导航链接二" href="javascript:void(0)">导航链接二</a></li>
+					<li><a title="导航链接三" href="javascript:void(0)">导航链接三</a></li>
+					<li><a title="导航链接四" href="javascript:void(0)">导航链接四</a></li>
+				</ul>
+			</nav>
+		</header>
+		<!-- header end -->
+		<!-- content strat -->
+		<article>
+			<h2>文章一级标题</h2>
+			<h3>文章二级标题</h3>
+			<p class="info">
+				<span class="author">文章作者</span>
+				<span class="time">文章发表时间</span>
+			</p>
+			<p>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了<br>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了<br>这是一个很长很长的段落，这是一个很长很长的段落，<a title="跳转到http://ife.baidu.com" href="http://ife.baidu.com/">这里有一个链接到http://ife.baidu.com</a>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，<strong>这里有个粗体字</strong>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落。</p>
+			<img src="http://www.dajohnny.com/images/ife/baidu.jpg" alt="百度logo" />
+			<p>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了<br>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，<strong>这里有个粗体字</strong>这是一个很长很长的段落，这是一个很长很长的段落，<a tytle="新窗口打开跳转到ift.baidu.com" href="http://ife.baidu.com/" target="_blank">这里有一个链接点击后打开新窗口链接到http://ife.baidu.com</a>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落。</p>
+		</article>
+		<article>
+			<h2>另一个文章一级标题</h2>
+			<h3>文章二级标题</h3>
+			<p class="info">
+				<span class="author">文章作者</span>
+				<span class="time">文章发表时间</span>
+			</p>
+			<p>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了<br>
+			这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了<br>
+			这是一个很长很长的段落，这是一个很长很长的段落，<a title="跳转到ife.baidu.com" href="http://ife.baidu.com">这里有一个链接到http://ife.baidu.com</a>这里是一个很长很长的段落，这里是一个很长很长的段落，<b>这里有个粗体字</b>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落。</p>
+			<img src="http://www.dajohnny.com/images/ife/baidu.jpg" />
+			<ul>
+				<li>列表项目一</li>
+				<li>列表项目二</li>
+				<li>列表项目三</li>
+			</ul>
+		</article>
+		<article>
+			<h2>图片</h2>
+			<ul class="pic">
+				<li>
+					<p>好帅的图片</p>
+					<img src="http://www.dajohnny.com/images/ife/ife-see.jpg" alt="好帅的照片"/>
+				</li>
+				<li>
+					<p>好帅的图片</p>
+					<img src="http://www.dajohnny.com/images/ife/ife-see.jpg" alt="好帅的照片"/>
+				</li>
+				<li>
+					<p>好帅的图片</p>
+					<img src="http://www.dajohnny.com/images/ife/ife-see.jpg" alt="好帅的照片"/>
+				</li>
+				<li>
+					<p>好帅的图片</p>
+					<img src="http://www.dajohnny.com/images/ife/ife-see.jpg" alt="好帅的照片"/>
+				</li>
+				<li>
+					<p>好帅的图片</p>
+					<img src="http://www.dajohnny.com/images/ife/ife-see.jpg" alt="好帅的照片"/>
+				</li>
+				<li>
+					<p>好帅的图片</p>
+					<img src="http://www.dajohnny.com/images/ife/ife-see.jpg" alt="好帅的照片"/>
+				</li>
+				<li>
+					<p>好帅的图片</p>
+					<img src="http://www.dajohnny.com/images/ife/ife-see.jpg" alt="好帅的照片"/>
+				</li>
+				<li>
+					<p>好帅的图片</p>
+					<img src="http://www.dajohnny.com/images/ife/ife-see.jpg" alt="好帅的照片"/>
+				</li>
+				<li>
+					<p>好帅的图片</p>
+					<img src="http://www.dajohnny.com/images/ife/ife-see.jpg" alt="好帅的照片"/>
+				</li>
+				<li>
+					<p>好帅的图片</p>
+					<img src="http://www.dajohnny.com/images/ife/ife-see.jpg" alt="好帅的照片"/>
+				</li>
+			</ul>
+		</article>
+		<article>
+			<h2>最后一篇文章一级标题</h2>
+			<h3>文章二级标题</h3>
+			<p class="info">
+				<span class="author">文章作者</span>
+				<span class="time">文章发表时间</span>
+			</p>
+			<ol>
+			    <li>排名一</li>
+			    <li>排名二</li>
+			    <li>排名三</li>
+			</ol>
+			<p>下面是一个表格，给表格加了一个border="1" cellspacing="0px"好让你看出格与格之间没有间隙</p>
+			<table cellspacing="0px">
+				<thead>
+					<tr>
+						<th>表头</th>
+						<th>表头</th>
+						<th>表头</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>表内容单元格</td>
+						<td>表内容单元格</td>
+						<td><a title="操作" href="javascript:void(0)">操作</a></td>
+					</tr>
+					<tr>
+					<td>表内容单元格</td>
+					<td>表内容单元格</td>
+					<td><a title="操作" href="javascript:void(0)">操作</a></td>
+					</tr>
+					<tr>
+						<td>表内容单元格</td>
+						<td>表内容单元格</td>
+						<td><a title="操作" href="javascript:void(0)">操作</a></td>
+					</tr>
+					<tr>
+						<td>表内容单元格</td>
+						<td>表内容单元格</td>
+						<td><a title="操作" href="javascript:void(0)">操作</a></td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<td>总计</td>
+						<td class="total" colspan="2";>10000</td>	
+					</tr>
+				</tfoot>
+			</table>
+		</article>
+		<!-- content end -->
+		<!-- aside strat -->
+		<aside>
+			<h3>这里以后是一个侧栏，这是侧栏的标题</h3>
+			<form action="" method="post">
+				<ul>
+				<li class="email">
+					<label>
+						<span class="tit">请输入邮箱地址</span>
+						<input type="email" placeholder="请输入E-mail地址" />
+					</label>
+					<p>邮箱地址请按要求格式输入</p>
+				</li>
+				<li class="password">
+					<label>
+						<span class="tit">请输入密码</span>
+						<input type="password" maxlength="16" min="6" placeholder="请输入为6-16的英文数字"/>
+					</label>
+					<label><br><br>
+						<span class="tit">请重复输入密码</span>
+						<input type="password" maxlength="16" min="6" placeholder="请重复确认输入"/>
+					</label>
+					<p>密码请为6-16的英文数字</p>
+				</li>
+				<li class=sex"">
+					<span class="tit">性别</span>
+					<input name="sex" type="radio" value="m" />
+					<label class="checked">男</label>
+					<input name="sex" type="radio" value="w" />
+					<label>女</label>
+				</li>
+				<li class="city">
+						<span class="tit">城市</span>
+						<label>
+							<span class="box"></span>
+							<select>
+								<option>北京</option>
+								<option>上海</option>
+								<option>广州</option>
+								<option>深圳</option>
+							</select>
+							
+						</label>
+				</li>
+				<li class="hobby">
+					<span class="tit">爱好</span>
+					<label><input type="checkbox" checked="checked" />运动</label>
+					<label><input type="checkbox" />艺术</label>
+					<label><input type="checkbox" />科学</label>
+				</li>
+				<li class="personal-profile">
+					<label>
+						<span class="tit">个人描述</span>
+						<textarea>这是一个多上输入框，输入您的个人描述</textarea>
+					</label>
+				</li>
+				</ul>
+				 <button type="submit">确认提交</button>
+			</form>
+		</aside>
+		<!-- aside end -->
+		<!-- footer start -->
+		<div>    
+		<footer>
+			<p>版权所有  
+				<span style="font-size:20px">&copy;</span> by 
+				<a href="javascript:void(0)">JS践行者</a>
+			</p>
+		</footer>
+		<!-- footer end -->
+	</body>
+</html>
